@@ -1,0 +1,15 @@
+<div class="class4">
+<p>User</p>
+<table *ngFor="let user of usersinfo;even as e;odd as o;index as id" class="table">
+  
+  <tr class="row">
+    <td [ngStyle]="{'color':e?'green':'red'}" id="name">{{user}}</td>
+    <td (click)="delete(id)"  id="icon" >Remove</td>
+  </tr>
+
+  </table>
+</div>
+
+
+
+
